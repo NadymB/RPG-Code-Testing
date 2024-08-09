@@ -16,8 +16,8 @@ export const PointList = forwardRef(({ data, _onClick, disabledPoint }, ref) => 
               key={index}
               className={`point-item absolute ${
                 item[index] ? "bg-white opacity-100" : "bg-red-400 opacity-0"
-              } hover:bg-red-400 transition-opacity duration-1000 ease-in-out flex items-center justify-center w-8 h-8 rounded-full border border-black font-medium ${
-                !disabledPoint && "cursor-pointer"
+              } transition-opacity duration-1000 ease-in-out flex items-center justify-center w-8 h-8 rounded-full border border-black font-medium ${
+                !disabledPoint && "hover:bg-red-400 cursor-pointer"
               }`}
               onClick={(e) => {
                 e.preventDefault();
